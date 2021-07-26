@@ -7,6 +7,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 public class Application {
 
+	private staatic final String REST_URL="https://www.equifax.com/getsoures";	
+
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 		//changes for HIS-134
