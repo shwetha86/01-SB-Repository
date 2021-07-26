@@ -6,6 +6,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class Application {
+	
+	private Map<Strin,Object> cache= new HashMap<String,Object>();	
 
 	private staatic final String REST_URL="https://www.equifax.com/getsoures";	
 
@@ -16,5 +18,9 @@ int a=98;
 		System.out.println(context);
 		context.close();
 	}
+
+	//HIS-301 changes
+	public void loadDataToCache(){
+}
 
 }
