@@ -6,6 +6,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class Application {
+	
+	private Map<Strin,Object> cache= new HashMap<String,Object>();	
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
@@ -14,5 +16,9 @@ int a=98;
 		System.out.println(context);
 		context.close();
 	}
+
+	//HIS-301 changes
+	public void loadDataToCache(){
+}
 
 }
