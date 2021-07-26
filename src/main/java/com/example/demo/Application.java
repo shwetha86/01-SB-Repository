@@ -10,6 +10,7 @@ public class Application {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 		//changes for HIS-134
+int a=98;
 		System.out.println(context);
 		context.close();
 	}
